@@ -1,0 +1,172 @@
+[debug] > Exec({file:/I:/workspace/scala/varys/varys_framework/}varys_framework/compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] compiling 39 Scala sources to I:\workspace\scala\varys\varys_framework\target\scala-2.13\classes ...
+[info] Non-compiled module 'compiler-bridge_2.13' for Scala 2.13.4. Compiling...
+[info]   Compilation completed in 5.487s.
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:68:9: not found: value RoundRobinRouter
+[error]         RoundRobinRouter(nrOfInstances = NUM_MASTER_INSTANCES)),
+[error]         ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:68:26: not found: value nrOfInstances
+[error]         RoundRobinRouter(nrOfInstances = NUM_MASTER_INSTANCES)),
+[error]                          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:89:58: not found: type RemotingLifecycleEvent
+[error]       context.system.eventStream.subscribe(self, classOf[RemotingLifecycleEvent])
+[error]                                                          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:200:15: not found: type DisassociatedEvent
+[error]       case e: DisassociatedEvent => {
+[error]               ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:203:42: value remoteAddress is not a member of Any
+[error]         if (addressToSlave.containsKey(e.remoteAddress))
+[error]                                          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:204:44: value remoteAddress is not a member of Any
+[error]           removeSlave(addressToSlave.get(e.remoteAddress))
+[error]                                            ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:205:43: value remoteAddress is not a member of Any
+[error]         if (addressToClient.containsKey(e.remoteAddress))
+[error]                                           ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:206:46: value remoteAddress is not a member of Any
+[error]           removeClient(addressToClient.get(e.remoteAddress))
+[error]                                              ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\Master.scala:566:17: value awaitTermination is not a member of akka.actor.ActorSystem
+[error]     actorSystem.awaitTermination()
+[error]                 ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\ui\MasterWebUI.scala:44:52: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => net.liftweb.json.JsonAST.JValue
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("/coflow/json", (request: HttpServletRequest) => coflowPage renderJson request),
+[error]                                                    ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\ui\MasterWebUI.scala:45:47: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => Seq[scala.xml.Node]
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("/coflow", (request: HttpServletRequest) => coflowPage.render(request)),
+[error]                                               ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\ui\MasterWebUI.scala:46:45: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => net.liftweb.json.JsonAST.JValue
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("/json", (request: HttpServletRequest) => indexPage.renderJson(request)),
+[error]                                             ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\master\ui\MasterWebUI.scala:47:41: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => Seq[scala.xml.Node]
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("*", (request: HttpServletRequest) => indexPage.render(request))
+[error]                                         ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:33:15: not found: type ActorRef
+[error]   var master: ActorRef = null
+[error]               ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:34:22: not found: type Address
+[error]   var masterAddress: Address = null
+[error]                      ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:44:14: not found: type SlaveWebUI
+[error]   var webUi: SlaveWebUI = null
+[error]              ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:46:19: not found: type Sigar
+[error]   var sigar = new Sigar()
+[error]                   ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:75:17: not found: type SlaveWebUI
+[error]     webUi = new SlaveWebUI(this, workDir, Some(webUiPort))
+[error]                 ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:90:38: not found: value Master
+[error]       master = AkkaUtils.getActorRef(Master.toAkkaUrl(masterUrl), context)
+[error]                                      ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:93:58: not found: type RemotingLifecycleEvent
+[error]       context.system.eventStream.subscribe(self, classOf[RemotingLifecycleEvent])
+[error]                                                          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:102:10: not found: value RegisteredSlave
+[error]     case RegisteredSlave(url) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:110:45: value millis is not a member of Int
+[error]         context.system.scheduler.schedule(0.millis, (HEARTBEAT_SEC * 1000).millis) {
+[error]                                             ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:110:76: value millis is not a member of Int
+[error]         context.system.scheduler.schedule(0.millis, (HEARTBEAT_SEC * 1000).millis) {
+[error]                                                                            ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:226:16: not found: type SigarException
+[error]       case se: SigarException => {
+[error]                ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:117:10: not found: value RegisterSlaveFailed
+[error]     case RegisterSlaveFailed(message) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:122:10: not found: value Terminated
+[error]     case Terminated(actor) if actor == master => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:126:13: not found: type DisassociatedEvent
+[error]     case e: DisassociatedEvent if e.remoteAddress == masterAddress =>
+[error]             ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:126:37: value remoteAddress is not a member of Any
+[error]     case e: DisassociatedEvent if e.remoteAddress == masterAddress =>
+[error]                                     ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:129:10: not found: value RequestSlaveState
+[error]     case RequestSlaveState => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:130:16: not found: value SlaveState
+[error]       sender ! SlaveState(ip, port, slaveId, masterUrl, curRxBps, curTxBps, masterWebUiUrl)
+[error]                ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:133:10: not found: value RegisteredCoflow
+[error]     case RegisteredCoflow(coflowId) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:138:10: not found: value UnregisterCoflow
+[error]     case UnregisterCoflow(coflowId) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:143:10: not found: value AddFlow
+[error]     case AddFlow(flowDesc) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:153:35: not found: value AddFlow
+[error]       AkkaUtils.tellActor(master, AddFlow(flowDesc))
+[error]                                   ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:157:10: not found: value AddFlows
+[error]     case AddFlows(flowDescs, coflowId, dataType) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:167:35: not found: value AddFlows
+[error]       AkkaUtils.tellActor(master, AddFlows(flowDescs, coflowId, dataType))
+[error]                                   ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:171:10: not found: value GetFlow
+[error]     case GetFlow(flowId, coflowId, clientId, _, flowDesc) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:178:10: not found: value GetFlows
+[error]     case GetFlows(flowIds, coflowId, clientId, _, flowDescs) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:185:10: not found: value DeleteFlow
+[error]     case DeleteFlow(flowId, coflowId) => {
+[error]          ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:256:20: not found: type SlaveArguments
+[error]     val args = new SlaveArguments(argStrings)
+[error]                    ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:259:17: value awaitTermination is not a member of akka.actor.ActorSystem
+[error]     actorSystem.awaitTermination()
+[error]                 ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\Slave.scala:270:19: not found: type VarysException
+[error]         throw new VarysException("Invalid master URL: " + varysUrl)
+[error]                   ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\ui\SlaveWebUI.scala:47:44: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => String
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("/log", (request: HttpServletRequest) => log(request)),
+[error]                                            ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\ui\SlaveWebUI.scala:48:48: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => Seq[scala.xml.Node]
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("/logPage", (request: HttpServletRequest) => logPage(request)),
+[error]                                                ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\ui\SlaveWebUI.scala:49:45: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => net.liftweb.json.JsonAST.JValue
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("/json", (request: HttpServletRequest) => indexPage.renderJson(request)),
+[error]                                             ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\framework\slave\ui\SlaveWebUI.scala:50:41: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => Seq[scala.xml.Node]
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("*", (request: HttpServletRequest) => indexPage.render(request))
+[error]                                         ^
+[error] I:\workspace\scala\varys\varys_framework\src\main\scala\varys\ui\env\EnvironmentUI.scala:17:51: type mismatch;
+[error]  found   : javax.servlet.http.HttpServletRequest => Seq[scala.xml.Node]
+[error]  required: org.eclipse.jetty.server.Handler
+[error]     ("/environment", (request: HttpServletRequest)=> envDetails(request))
+[error]                                                   ^
+[error] 47 errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 11 s, completed Feb 5, 2021, 12:14:49 AM
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

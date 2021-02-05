@@ -1,0 +1,103 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\vinay\AppData\Local\Temp\idea1.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\vinay\AppData\Local\Temp\idea1.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.6 (Oracle Corporation Java 15.0.1)
+[debug]       Load.loadUnit: plugins took 63.4084ms
+[debug]       Load.loadUnit: defsScala took 0.3111ms
+[debug] [Loading] Scanning directory C:\Users\vinay\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\vinay\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 19.2276 ms
+[debug]           Load.resolveProject(global-plugins) took 32.4955ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\vinay\.sbt\1.0\plugins, plugins: List(<none>))) took 75.5429ms
+[debug] [Loading] Done in C:\Users\vinay\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 93.1043ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.1736ms
+[debug]     Load.loadUnit(file:/C:/Users/vinay/.sbt/1.0/plugins/, ...) took 165.1583ms
+[debug]   Load.apply: load took 295.8048ms
+[debug]   Load.apply: resolveProjects took 4.099ms
+[debug]   Load.apply: finalTransforms took 46.0725ms
+[debug]   Load.apply: config.delegates took 5.154ms
+[debug]   Load.apply: Def.make(settings)... took 1041.9659ms
+[debug]   Load.apply: structureIndex took 84.6004ms
+[debug]   Load.apply: mkStreams took 1.5503ms
+[info] loading global plugins from C:\Users\vinay\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 2524.7915ms
+[debug]           Load.loadUnit: plugins took 19.7279ms
+[debug]           Load.loadUnit: defsScala took 0.0027ms
+[debug] [Loading] Scanning directory I:\workspace\scala\varys\varys_framework\project
+[debug]             Load.loadUnit: mkEval took 4.4759ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in I:\workspace\scala\varys\varys_framework\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.6511 ms
+[info] loading settings for project varys_framework-build from idea1.sbt ...
+[debug]               Load.resolveProject(varys_framework-build) took 3.1513ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id varys_framework-build, base: I:\workspace\scala\varys\varys_framework\project, plugins: List(<none>))) took 5.2951ms
+[debug] [Loading] Done in I:\workspace\scala\varys\varys_framework\project, returning: (varys_framework-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 95.5856ms
+[debug]           Load.loadUnit: cleanEvalClasses took 3.9417ms
+[debug]         Load.loadUnit(file:/I:/workspace/scala/varys/varys_framework/project/, ...) took 120.0169ms
+[debug]       Load.apply: load took 121.0226ms
+[debug]       Load.apply: resolveProjects took 0.0749ms
+[debug]       Load.apply: finalTransforms took 12.7523ms
+[debug]       Load.apply: config.delegates took 0.3613ms
+[debug]       Load.apply: Def.make(settings)... took 69.6248ms
+[debug]       Load.apply: structureIndex took 22.9428ms
+[debug]       Load.apply: mkStreams took 0.0028ms
+[info] loading project definition from I:\workspace\scala\varys\varys_framework\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 481.3909ms
+[debug]     Load.loadUnit: defsScala took 0.0023ms
+[debug] [Loading] Scanning directory I:\workspace\scala\varys\varys_framework
+[debug]       Load.loadUnit: mkEval took 0.2012ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in I:\workspace\scala\varys\varys_framework, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.8162 ms
+[info] loading settings for project varys_framework from build.sbt ...
+[debug]         Load.resolveProject(varys_framework) took 19.2774ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id varys_framework, base: I:\workspace\scala\varys\varys_framework, plugins: List(<none>))) took 21.9641ms
+[debug] [Loading] Done in I:\workspace\scala\varys\varys_framework, returning: (varys_framework)
+[debug]     Load.loadUnit: loadedProjectsRaw took 192.7336ms
+[debug]     Load.loadUnit: cleanEvalClasses took 31.2585ms
+[debug]   Load.loadUnit(file:/I:/workspace/scala/varys/varys_framework/, ...) took 706.1138ms
+[debug] Load.apply: load took 707.4094ms
+[debug] Load.apply: resolveProjects took 0.0926ms
+[debug] Load.apply: finalTransforms took 20.8494ms
+[debug] Load.apply: config.delegates took 0.2982ms
+[debug] Load.apply: Def.make(settings)... took 53.5682ms
+[debug] Load.apply: structureIndex took 22.6118ms
+[debug] Load.apply: mkStreams took 0.0023ms
+[info] set current project to varys_framework (in build file:/I:/workspace/scala/varys/varys_framework/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 57075 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 57075, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to varys_framework (in build file:/I:/workspace/scala/varys/varys_framework/)
+[debug] > Exec(idea-shell, None, None)

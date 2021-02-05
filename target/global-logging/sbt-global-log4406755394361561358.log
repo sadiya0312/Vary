@@ -1,0 +1,7 @@
+[debug] > Exec({file:/I:/workspace/scala/varys/varys_framework/}varys_framework/clean, None, None)
+[debug] Evaluating tasks: clean
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Total time: 0 s, completed Feb 5, 2021, 12:11:42 AM
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
